@@ -2,7 +2,7 @@
 
 **Workflows, Agents, Tools, Context.**
 
-Most "AI assistant" projects collapse all four into a single prompt and hope for the best. That's why they drift, hallucinate, and forget. WATC separates the layers so each one does what it's good at.
+Most AI projects ask the model to do all four jobs at once — remember the situation, decide the steps, execute them, and produce the result — inside a single prompt. The fix isn't a better model. It's separating the layers so each one does the job it's actually built for.
 
 ## The four layers, top to bottom
 
@@ -32,7 +32,7 @@ The agent is not trying to be a database, a script runner, or a search engine. I
 
 Scripts in `tools/`. Python, shell, whatever. They make API calls, transform data, write files, query databases. Deterministic, testable, fast.
 
-If the agent is doing something that could be a script, it should be a script. Anything done in pure LLM that could be deterministic is a future bug.
+If something can be done by a script, do it in a script. Reserve the model for the parts that actually need judgment.
 
 ## Why separate them
 
@@ -72,7 +72,7 @@ Not:
 behavior = f(current_input)
 ```
 
-This is what makes the agent feel like a continuing relationship rather than a series of disconnected conversations. It remembers what was decided, what's open, what's drifting. It surfaces things you forgot. It doesn't ask you to restate context every time.
+This is why the agent feels continuous instead of starting from zero every session. It already knows what was decided last time, what's still open, and what you flagged as drifting. You don't have to restate the situation.
 
 ## How this kit uses WATC
 

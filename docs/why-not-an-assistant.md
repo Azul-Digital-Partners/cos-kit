@@ -18,9 +18,7 @@ A founder walks into a Monday session with their assistant: *"Pull up the propos
 
 A founder walks into a Monday session with their chief of staff: *"Acme is closing on Wednesday — you owed them revised scope and pricing by EOD Friday and I haven't seen it land. Want to review the draft now or push to Tuesday morning? Also, your Q3 commitments call with the board is at 4pm, and you haven't touched the deck since Thursday. The Nordis check we were expecting Friday hasn't hit yet — Engagement PM is on it. Health side: you're at three workouts this week against five, with two days left."*
 
-Same person, same hour, same toolkit. Completely different relationship.
-
-The first one returns the proposal. The second one returns the proposal *and* the dropped Friday commitment *and* the unaddressed deck *and* the slipping cash collection *and* the off-pace fitness goal.
+Same founder, same hour, same toolkit. The first one returns the proposal. The second one returns the proposal, plus the dropped Friday commitment, the deck that hasn't been touched, the slipping cash collection, and the off-pace fitness goal.
 
 That's the gap this kit is trying to close.
 

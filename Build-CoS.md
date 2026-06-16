@@ -322,12 +322,12 @@ First ask: **Do you run a business, lead a team, or work as an individual contri
 
 ### Section 9: The 4Cs Scan
 
-This last section is the one that compounds. Walk the **4Cs** lens for what the Chief of Staff should help with first. Ask the four together:
+This last section is the one that compounds. Walk the **4Cs** — Context, Connections, Capabilities, Cadence — for what the Chief of Staff should help with first.
 
-- **Context** — beyond what you've already told me (people, goals, life), is there anything I'd need to load at session start to feel current? (e.g., the link to your weekly OKR doc, the URL of your project board)
-- **Connections** — what systems do you actually live in day-to-day that I should know exist, even if I can't reach them yet? (e.g., Notion workspace name, HubSpot account, Outlook vs. Gmail, Slack workspaces)
-- **Capabilities** — if you could hand me three workflows tomorrow, what would they be? (e.g., morning brief, weekly review, conversation capture, end-of-day PPP)
-- **Cadence** — when would you want me to show up automatically vs. only when asked? (e.g., morning brief at 7am, weekly review Friday 4pm, drift flag on Sundays)
+- **Context** (what the AI knows about) — beyond what you've already told me, what would I need to load at session start to feel current? (e.g., link to your weekly OKR doc, URL of your project board)
+- **Connections** (what live data it can reach without you giving it) — what systems do you live in day-to-day that I should plan to read from? (e.g., Outlook calendar, HubSpot, Notion, Slack, Google Drive)
+- **Capabilities** (what it can produce — multistep artifacts from a short phrase) — if you could hand me three workflows tomorrow, what would they be? (e.g., morning brief, weekly review, conversation capture, end-of-day PPP)
+- **Cadence** (when it acts on its own, while your laptop is closed) — when would you want me to run automatically vs. only on demand? (e.g., morning brief 7am, weekly review Friday 4pm, drift flag Sundays)
 
 Capture these answers — they seed `current-priorities.md`, the Skills-to-Build backlog in `CLAUDE.md`, and the first round of integrations the user will wire later.
 

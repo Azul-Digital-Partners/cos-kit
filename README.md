@@ -4,7 +4,7 @@
 
 ### A Chief of Staff for Claude Code
 
-*Hold the whole picture — work, health, family, commitments — in one operating system.*
+*The full picture — work, health, family — in one place.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Runs on Claude Code](https://img.shields.io/badge/Runs%20on-Claude%20Code-8A2BE2)](https://docs.claude.com/en/docs/claude-code)
@@ -23,7 +23,7 @@
 
 Steven has been running a version of this on Claude Code for months. It changed how he runs his work, his health, and his family. He wanted to give the foundation away.
 
-This is that foundation — stripped of Azul-specific integrations, rebuilt as a kit anyone with Claude Code can stand up in about 30 minutes.
+This is that foundation, minus the Azul-specific integrations. Anyone with Claude Code can stand it up in about 30 minutes.
 
 ---
 
@@ -74,7 +74,7 @@ About 20–30 minutes total. At the end you have a working Chief of Staff custom
 
 ## The WATC architecture
 
-Most AI systems try to do everything in one probabilistic call and accuracy collapses across multi-step work. WATC separates *reasoning* (the agent) from *execution* (the tools), and grounds both in *persistent context* so the system gets smarter over time instead of starting cold every session.
+WATC separates the four things an AI system has to do well: hold **Context** the agent can read at session start, follow **Workflows** that name how work gets done, route through an **Agent** that makes the judgment calls, and run **Tools** that execute deterministically.
 
 ```mermaid
 flowchart TB
@@ -115,26 +115,26 @@ flowchart TB
     class T1,T2,T3 tl
 ```
 
-**Why this works:** if every probabilistic step is 90% accurate, you're at 59% after five steps. Offload execution to deterministic scripts and accuracy stops decaying. Layer persistent state on top and the agent becomes continuous across sessions instead of episodic.
+**Why this works:** if every step is 90% accurate, you're at 59% after five steps. Moving execution to scripts (where accuracy is 100%) stops that decay. Persistent state files let the next session start with the last session's output, instead of cold.
 
 Read more: [`docs/watc.md`](docs/watc.md).
 
 ---
 
-## The 4Cs lens
+## The 4Cs of AI development
 
-Every agent decision — what to add, what to fix, when to escalate — gets evaluated through four questions:
+Four axes for evaluating any AI system. We use them on every agent we ship.
 
 ```mermaid
 flowchart LR
-    Q["A decision shows up"] --> C1
+    Q["Any AI system"] --> C1
     Q --> C2
     Q --> C3
     Q --> C4
-    C1["**Context**<br/>Does it know enough?"] --> R["Better decision"]
-    C2["**Connections**<br/>Can it reach what it needs?"] --> R
-    C3["**Capabilities**<br/>Does it have the right tools?"] --> R
-    C4["**Cadence**<br/>Is it acting at the right rhythm?"] --> R
+    C1["**Context**<br/>What it knows about"] --> R["Is it set up<br/>for the work?"]
+    C2["**Connections**<br/>What live data it can reach<br/>without you giving it"] --> R
+    C3["**Capabilities**<br/>What it can produce —<br/>multistep artifacts<br/>from a short phrase"] --> R
+    C4["**Cadence**<br/>When it acts on its own,<br/>while your laptop is closed"] --> R
 
     classDef c fill:#0A2540,stroke:#0A2540,color:#fff
     classDef r fill:#F5A623,stroke:#F5A623,color:#000
@@ -142,12 +142,12 @@ flowchart LR
     class R r
 ```
 
-| C | Question | Failure mode | The fix |
+| C | What it means | Common failure | The fix |
 |---|---|---|---|
-| **Context** | Does it know enough to be helpful? | Generic answers, forgets last session | Add it to `state/` or the relevant context file |
-| **Connections** | Can it reach the systems and people it needs? | "I don't have access to your calendar" | Wire the integration |
-| **Capabilities** | Does it have a tool for the job? | Hallucinates the work instead of executing | Build the tool, document the workflow |
-| **Cadence** | Is it operating at the right rhythm? | Floods you with noise, or stays silent through a fire | Tune the trigger, not the model |
+| **Context** | What the AI knows about | Asks "what's going on?" every session | Better state files |
+| **Connections** | What live data it can reach without you giving it | Asks you to summarize your own inbox | Wire the integration |
+| **Capabilities** | What multistep artifacts it can produce from a short phrase | Same workflow rebuilt from scratch every time | Name it, write the skill |
+| **Cadence** | When it acts on its own, while your laptop is closed | Only useful when you remember to use it | Cron, webhook, or scheduled trigger |
 
 Read more: [`docs/4cs.md`](docs/4cs.md).
 
@@ -167,7 +167,7 @@ Read more: [`docs/4cs.md`](docs/4cs.md).
 >
 > **CoS:** Three things. (1) You committed last week to a revised statement of work by end of this week — draft is still open in `decisions/commitments.md`. (2) Casey raised pricing concerns on the May 14 call; you said you'd come back with an option B. (3) She's been promoted since you last spoke — congratulating her would be a nice open.
 
-Same model. Different operating system.
+Same model running underneath. The difference is what you put around it.
 
 ---
 
@@ -236,7 +236,7 @@ This kit is the foundation of a much larger system we run at [Azul Digital](http
 
 If you want to see how the methodology scales beyond a personal CoS — or you want help wiring integrations into your Chief of Staff — **[book a call](https://azuldigital.ai/contact)**.
 
-The give-away here is real and complete. The call is for when you want to go further.
+The kit is complete on its own. The call is for when you want to go further.
 
 ---
 
@@ -250,6 +250,6 @@ We actively want bug reports, doc clarifications, workflow examples, and better 
 
 ## Credits
 
-Built by **Steven Christopher** and the team at **[Azul Digital](https://azuldigital.ai)**. Inspired by every founder, operator, and chief of staff who has tried to hold the whole picture in their head and discovered it doesn't fit.
+Built by **Steven Christopher** and the team at **[Azul Digital](https://azuldigital.ai)**.
 
 If this helps you, we'd love to hear about it. Open an issue, tag `#azul-cos-kit` somewhere public, or just send a note.

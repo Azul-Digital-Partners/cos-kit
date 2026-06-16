@@ -29,7 +29,7 @@ Your CoS will:
 4. Cross-check open items from last time — and ask if anything unresolved was addressed.
 5. Update `state/current.md` if anything material changed.
 
-This is the loop that makes the CoS feel useful. Every captured conversation makes the next session sharper.
+This is the loop that does the work. Every captured conversation is something the next session can read.
 
 ## Day 3 — Brief before a meeting
 
@@ -63,7 +63,7 @@ Say:
 
 Your CoS will scan people files, commitments, and goals for anything past its expected cadence. Active clients you haven't touched in two weeks. Pipeline that's gone cold. Workouts that are off pace. A family commitment you haven't acted on.
 
-Drift detection is the muscle most operators don't have. The CoS does.
+Drift detection is hard to do by hand. The CoS is built to do it for you.
 
 ## Through the week — Update as you go
 
@@ -90,7 +90,7 @@ After a couple weeks, you'll start to notice the recurring workflows. *Every Mon
 
 Drop a file in `.claude/skills/{skill-name}/SKILL.md` with a description, a trigger, and the steps. Now the CoS has a named verb for that workflow. The next time you'd normally do it from scratch, you just say `/skill-name`.
 
-Skills are how the system gets sharper over time. Build them organically. Don't try to write twelve on day one.
+Skills are how the system compounds. Build them as the workflows reveal themselves. Don't try to write twelve on day one.
 
 ## What this kit doesn't ship
 
