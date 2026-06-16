@@ -102,4 +102,4 @@ By design, the give-away is the foundation. You won't find:
 - Email automation.
 - Health tracker integrations.
 
-All of those are wireable, and the WATC structure makes them straightforward. You write `tools/{integration}.py`, document it in a workflow, and the CoS can use it. Or — if you want help wiring them — [book a call with Azul Digital](https://azuldigital.ai/contact). We do this for a living.
+All of those are wireable, and the WATC structure makes them straightforward. You write `tools/{integration}.py`, document it in a workflow, and the CoS can use it. Or — if you want help wiring them — [book a call with Azul Digital](https://goazuldigital.com). We do this for a living.

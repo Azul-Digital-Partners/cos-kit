@@ -9,7 +9,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Runs on Claude Code](https://img.shields.io/badge/Runs%20on-Claude%20Code-8A2BE2)](https://docs.claude.com/en/docs/claude-code)
-[![From Azul Digital](https://img.shields.io/badge/From-Azul%20Digital-0A2540)](https://azuldigital.ai)
+[![From Azul Digital](https://img.shields.io/badge/From-Azul%20Digital-0A2540)](https://goazuldigital.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [**Quick start**](#quick-start) · [**What you get**](#what-you-get) · [**WATC architecture**](#the-watc-architecture) · [**The 4Cs**](#the-4cs-lens) · [**FAQ**](#faq) · [**Docs**](docs/)
@@ -220,7 +220,7 @@ Both of those store context. Neither runs deterministic tools, follows workflow 
 <details>
 <summary><strong>What if I want integrations?</strong></summary>
 
-Two paths. (1) Build them yourself — the kit teaches the pattern, and Claude Code is good at this. (2) [Book a call with Azul Digital](https://azuldigital.ai/contact) — wiring integrations into a Chief of Staff is exactly what we do for clients.
+Two paths. (1) Build them yourself — the kit teaches the pattern, and Claude Code is good at this. (2) [Book a call with Azul Digital](https://goazuldigital.com) — wiring integrations into a Chief of Staff is exactly what we do for clients.
 </details>
 
 <details>
@@ -243,11 +243,11 @@ Bug reports, doc fixes, better diagrams, workflow examples — yes please. Featu
 
 ## From Azul Digital
 
-This kit is the foundation. The same WATC architecture and 4Cs lens runs our internal workforce at [Azul Digital](https://azuldigital.ai) — ten specialized agents (CEO, CTO, CFO, CIO, Marketing, Product, Agent Ops, Engagement PM, Sales Ops, plus Rosalind the Chief of Staff), each with their own Slack DM, all coordinated through Paperclip (our agent issue tracker) and woken on cron heartbeats. Integrations with Outlook, HubSpot, QuickBooks, Notion, GitHub, and Slack. Tier 1 / Tier 2 governance so the board only sees what needs a human call.
+This kit is the foundation. The same WATC architecture and 4Cs lens runs our internal workforce at [Azul Digital](https://goazuldigital.com) — ten specialized agents (CEO, CTO, CFO, CIO, Marketing, Product, Agent Ops, Engagement PM, Sales Ops, plus Rosalind the Chief of Staff), each with their own Slack DM, all coordinated through Paperclip (our agent issue tracker) and woken on cron heartbeats. Integrations with Outlook, HubSpot, QuickBooks, Notion, GitHub, and Slack. Tier 1 / Tier 2 governance so the board only sees what needs a human call.
 
 See **[The Azul Stack](docs/the-azul-stack.md)** for the full picture of what we built on top of this — named agents, the control plane, the cadence layer, the governance model.
 
-If you want help extending toward that — **[book a call](https://azuldigital.ai/contact)**.
+If you want help extending toward that — **[book a call](https://goazuldigital.com)**.
 
 The kit is complete on its own. The call is for when you want to go further.
 
@@ -263,6 +263,6 @@ We actively want bug reports, doc clarifications, workflow examples, and better 
 
 ## Credits
 
-Built by **Steven Christopher** and the team at **[Azul Digital](https://azuldigital.ai)**.
+Built by **Steven Christopher** and the team at **[Azul Digital](https://goazuldigital.com)**.
 
 If this helps you, we'd love to hear about it. Open an issue, tag `#azul-cos-kit` somewhere public, or just send a note.

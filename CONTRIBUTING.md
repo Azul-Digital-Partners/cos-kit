@@ -28,4 +28,4 @@ Be a decent person. Disagree with ideas, not people. The maintainers reserve the
 
 ## Maintainers
 
-[@stevenchristopher](https://github.com/stevenchristopher) and the team at [Azul Digital](https://azuldigital.ai).
+[@stevenchristopher](https://github.com/stevenchristopher) and the team at [Azul Digital](https://goazuldigital.com).

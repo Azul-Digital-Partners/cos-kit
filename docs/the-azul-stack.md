@@ -80,6 +80,6 @@ This is what makes the team feel coordinated rather than ten disconnected chatbo
 
 If you want a personal Chief of Staff, the [kit in this repo](../README.md) is the give-away. Set it up, capture conversations, brief before meetings, close out the week.
 
-If you want to extend toward what we run — a leadership team of agents, integrations into your live stack, cadence that operates while you sleep, governance the board can actually approve — that's what we do for clients. [Book a call](https://azuldigital.ai/contact).
+If you want to extend toward what we run — a leadership team of agents, integrations into your live stack, cadence that operates while you sleep, governance the board can actually approve — that's what we do for clients. [Book a call](https://goazuldigital.com).
 
 The architecture is the same. The substance is what we'd build with you.
