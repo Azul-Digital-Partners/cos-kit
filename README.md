@@ -232,9 +232,11 @@ Bug reports, doc fixes, better diagrams, workflow examples — yes please. Featu
 
 ## From Azul Digital
 
-This kit is the foundation of a much larger system we run at [Azul Digital](https://azuldigital.ai) — a full digital workforce of specialized agents (engineering, marketing, finance, customer success), all coordinated through the same WATC architecture and the 4Cs lens.
+This kit is the foundation. The same WATC architecture and 4Cs lens runs our internal workforce at [Azul Digital](https://azuldigital.ai) — ten specialized agents (CEO, CTO, CFO, CIO, Marketing, Product, Agent Ops, Engagement PM, Sales Ops, plus Rosalind the Chief of Staff), each with their own Slack DM, all coordinated through Paperclip (our agent issue tracker) and woken on cron heartbeats. Integrations with Outlook, HubSpot, QuickBooks, Notion, GitHub, and Slack. Tier 1 / Tier 2 governance so the board only sees what needs a human call.
 
-If you want to see how the methodology scales beyond a personal CoS — or you want help wiring integrations into your Chief of Staff — **[book a call](https://azuldigital.ai/contact)**.
+See **[The Azul Stack](docs/the-azul-stack.md)** for the full picture of what we built on top of this — named agents, the control plane, the cadence layer, the governance model.
+
+If you want help extending toward that — **[book a call](https://azuldigital.ai/contact)**.
 
 The kit is complete on its own. The call is for when you want to go further.
 
