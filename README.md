@@ -5,6 +5,7 @@
 ### A Chief of Staff for Claude Code
 
 *The full picture — work, health, family — in one place.*
+*Built on a platform-agnostic methodology (WATC + 4Cs).*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Runs on Claude Code](https://img.shields.io/badge/Runs%20on-Claude%20Code-8A2BE2)](https://docs.claude.com/en/docs/claude-code)
@@ -220,6 +221,16 @@ Both of those store context. Neither runs deterministic tools, follows workflow 
 <summary><strong>What if I want integrations?</strong></summary>
 
 Two paths. (1) Build them yourself — the kit teaches the pattern, and Claude Code is good at this. (2) [Book a call with Azul Digital](https://azuldigital.ai/contact) — wiring integrations into a Chief of Staff is exactly what we do for clients.
+</details>
+
+<details>
+<summary><strong>Does this work with ChatGPT, Cursor, or other harnesses?</strong></summary>
+
+The *methodology* is platform-agnostic — WATC and the 4Cs are just markdown context, plain-language workflows, and deterministic tools. Any capable LLM can run that pattern.
+
+The *kit as shipped* targets Claude Code specifically. `Build-CoS.md` is a self-executing setup script that leans on Claude Code's harness (CLAUDE.md auto-load, the Skill tool, slash commands, hooks, `settings.json`). Steven has been running it on Claude Code for months. We have not validated it end-to-end on ChatGPT, Cursor, or other harnesses yet.
+
+If you want to port it to another harness, the context files (`CLAUDE.md`, generated workflows, state files) come along cleanly — you'd just need a thin adapter for the runtime conveniences. PRs welcome.
 </details>
 
 <details>
