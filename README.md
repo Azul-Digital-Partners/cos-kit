@@ -12,7 +12,7 @@
 [![From Azul Digital](https://img.shields.io/badge/From-Azul%20Digital-0A2540)](https://goazuldigital.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[**Quick start**](#quick-start) · [**What you get**](#what-you-get) · [**WATC architecture**](#the-watc-architecture) · [**The 4Cs**](#the-4cs-lens) · [**FAQ**](#faq) · [**Docs**](docs/)
+[**Quick start**](#quick-start) · [**What you get**](#what-you-get) · [**What's new in v2**](#whats-new-in-v2) · [**WATC architecture**](#the-watc-architecture) · [**The 4Cs**](#the-4cs-lens) · [**FAQ**](#faq) · [**Docs**](docs/)
 
 </div>
 
@@ -37,6 +37,12 @@ cos-kit/
 ├── Build-CoS.md       A self-executing setup script. Claude reads it,
 │                      interviews you for ~20 minutes, then writes your
 │                      custom Chief of Staff.
+├── skills/            Five starter skills, installed during setup:
+│   ├── morning/       /morning  daily brief: scoreboard, top 3, flags
+│   ├── brief/         /brief    before a meeting
+│   ├── capture/       /capture  after a conversation
+│   ├── ppp/           /ppp      end of day: Progress, Problems, Plans
+│   └── done/          /done     close the session, write state
 ├── docs/
 │   ├── watc.md        The architecture in detail.
 │   ├── 4cs.md         The lens we use to evaluate every agent decision.
@@ -55,7 +61,7 @@ Personal and health goals compete on equal terms with work. A missed workout str
 You need [Claude Code](https://docs.claude.com/en/docs/claude-code) installed and an empty folder.
 
 ```bash
-# 1. Clone (or just download CLAUDE.md and Build-CoS.md)
+# 1. Clone (or download CLAUDE.md, Build-CoS.md, and the skills/ folder)
 git clone https://github.com/Azul-Digital-Partners/cos-kit my-chief-of-staff
 cd my-chief-of-staff
 
@@ -69,7 +75,26 @@ Then tell Claude:
 
 It will preserve the foundation rules, then walk you through nine short interview sections — about you, your work, your goals, your people, your family, your health, and how you like to be talked to.
 
-About 20–30 minutes total. At the end you have a working Chief of Staff customized to you, named whatever you want it named.
+About 20–30 minutes total. At the end you have a working Chief of Staff customized to you, named whatever you want it named. Run `/morning` for your first brief.
+
+---
+
+## What's new in v2
+
+Lessons from running the full system every day since the first release:
+
+| Change | Why |
+|---|---|
+| **Starter skills ship with the kit** | v1 left the skills folder empty. You now get a working daily rhythm on day one. |
+| **Senior-contact cadence** | The person who signs is often not the person you talk to most. Signers get a 14-day touch rule that escalates at day 21, 30, and 45, however warm the working-level relationship looks. |
+| **Evidence before done** | Nothing closes without proof. No IDs cited before the tool returns them. Sent mail gets checked before anything is called overdue. |
+| **Read the whole source** | No keyword-scanning a document and answering as if it was read. Search locates facts. It does not decide what a document says. |
+| **Deprioritize, never delete** | A pushed-down flag comes back after 7 days with its day count intact. |
+| **Instruction priority** | A ranked order for which instruction wins. The agent says out loud when two conflict. |
+| **Scoreboard** | 3–4 numbers you choose open every brief. Anything without a real source shows UNKNOWN, never a guess. |
+| **Lighter session start** | Today's brief and state load first. Everything else loads when the task needs it. |
+| **Private by default** | Health and family files are gitignored and never leave the folder. |
+| **Temporary overrides expire** | Every "pause this" rule gets an end date, so it can't quietly outlive its reason. |
 
 ---
 
@@ -158,15 +183,15 @@ Read more: [`docs/4cs.md`](docs/4cs.md).
 
 **An AI assistant:**
 
-> **You:** Anything I should know before the 10am with Casey?
+> **You:** Anything I should know before the 10am with Dana?
 >
 > **Assistant:** I don't have access to your calendar or previous meeting notes. Could you share what you'd like to discuss?
 
 **Your Chief of Staff:**
 
-> **You:** Anything I should know before the 10am with Casey?
+> **You:** Anything I should know before the 10am with Dana?
 >
-> **CoS:** Three things. (1) You committed last week to a revised statement of work by end of this week — draft is still open in `decisions/commitments.md`. (2) Casey raised pricing concerns on the May 14 call; you said you'd come back with an option B. (3) She's been promoted since you last spoke — congratulating her would be a nice open.
+> **CoS:** Three things. (1) You committed last week to a revised statement of work by end of this week — draft is still open in `decisions/commitments.md`. (2) Dana raised pricing concerns on the May 14 call; you said you'd come back with an option B. (3) She's been promoted since you last spoke — congratulating her would be a nice open.
 
 Same model running underneath. The difference is what you put around it.
 
@@ -190,7 +215,7 @@ You get the architecture, the methodology, and a working personal Chief of Staff
 <details>
 <summary><strong>Do I need to be technical to use this?</strong></summary>
 
-You need to be able to install [Claude Code](https://docs.claude.com/en/docs/claude-code), open a terminal, and drop two files in a folder. That's it. The setup script does the rest by interview.
+You need to be able to install [Claude Code](https://docs.claude.com/en/docs/claude-code), open a terminal, and copy the kit into a folder. That's it. The setup script does the rest by interview.
 </details>
 
 <details>

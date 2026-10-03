@@ -16,11 +16,17 @@ If it asks "what's going on?" or "what would you like to work on" — push back.
 
 That recalibrates the relationship.
 
+## Every morning — Run the brief
+
+> /morning
+
+You get your scoreboard, one headline, three priorities, and flags. It shows on screen first. Correct anything that's off, then it saves to `reports/`.
+
 ## Day 2 — Capture your first conversation
 
 Have a real conversation. Could be a client call, an internal sync, a coffee with a friend you've been meaning to catch up with. Then come back and say:
 
-> Capture: I just talked to [Name]. [Recap in plain language.]
+> /capture I just talked to [Name]. [Recap in plain language.]
 
 Your CoS will:
 1. Update the person's file in `people/`.
@@ -35,7 +41,7 @@ This is the loop that does the work. Every captured conversation is something th
 
 Before your next meeting with someone in your `people/` folder, say:
 
-> Brief me on [Name].
+> /brief [Name]
 
 You should get back:
 - Who they are and why you're meeting.
@@ -49,9 +55,9 @@ If the file is thin, the brief will be thin. That's not a failure; that's a sign
 
 At end of day, say:
 
-> PPP.
+> /ppp
 
-(Progress, Problems, Plans.)
+(Progress, Problems, Plans.) If a meeting from yesterday or earlier still has no captured outcome, it will ask about that first.
 
 Your CoS will give you a short pass across work, health, and personal. What got done, what's stuck, what's next. This is also when state gets updated.
 
@@ -73,9 +79,9 @@ Every meaningful decision: log it. Every captured conversation: update the perso
 
 When you're done for the week, say:
 
-> Close out.
+> /done
 
-The CoS will write `state/last-session.md` and update `state/current.md`. Next Monday, when you open Claude Code and say hello, it will pick up exactly where you left off.
+Run it at the end of every session, not just Fridays. The CoS will write `state/last-session.md` and update `state/current.md`. Next Monday, when you open Claude Code and say hello, it will pick up exactly where you left off.
 
 ## Common adjustments
 
@@ -86,11 +92,13 @@ The CoS will write `state/last-session.md` and update `state/current.md`. Next M
 
 ## What to do once the muscle is there
 
-After a couple weeks, you'll start to notice the recurring workflows. *Every Monday I do X. Every Friday I do Y. Before every client call I do Z.* That's when you write skills.
+The kit ships five skills: `/morning`, `/brief`, `/capture`, `/ppp`, `/done`. Edit them freely. They're yours.
+
+After a couple weeks, you'll start to notice other recurring workflows. *Every Monday I do X. Every Friday I do Y. Before every client call I do Z.* That's when you write skills.
 
 Drop a file in `.claude/skills/{skill-name}/SKILL.md` with a description, a trigger, and the steps. Now the CoS has a named verb for that workflow. The next time you'd normally do it from scratch, you just say `/skill-name`.
 
-Skills are how the system compounds. Build them as the workflows reveal themselves. Don't try to write twelve on day one.
+Skills are how the system compounds. Build them as the workflows reveal themselves. Don't try to write twelve more on day one.
 
 ## What this kit doesn't ship
 

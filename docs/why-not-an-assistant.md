@@ -16,7 +16,7 @@ If you set up this kit and then start using it like ChatGPT, you'll get back som
 
 A founder walks into a Monday session with their assistant: *"Pull up the proposal for Acme."*
 
-A founder walks into a Monday session with their chief of staff: *"Acme is closing on Wednesday — you owed them revised scope and pricing by EOD Friday and I haven't seen it land. Want to review the draft now or push to Tuesday morning? Also, your Q3 commitments call with the board is at 4pm, and you haven't touched the deck since Thursday. The Nordis check we were expecting Friday hasn't hit yet — Engagement PM is on it. Health side: you're at three workouts this week against five, with two days left."*
+A founder walks into a Monday session with their chief of staff: *"Acme is closing on Wednesday — you owed them revised scope and pricing by EOD Friday and I haven't seen it land. Want to review the draft now or push to Tuesday morning? Also, your Q3 commitments call with the board is at 4pm, and you haven't touched the deck since Thursday. The Brightline check we were expecting Friday hasn't hit yet — Engagement PM is on it. Health side: you're at three workouts this week against five, with two days left."*
 
 Same founder, same hour, same toolkit. The first one returns the proposal. The second one returns the proposal, plus the dropped Friday commitment, the deck that hasn't been touched, the slipping cash collection, and the off-pace fitness goal.
 
@@ -39,7 +39,7 @@ The CoS relationship works when you treat it like one:
 - Asking how you want to be talked to (it's in `.claude/rules/communication-style.md`).
 - Asking what was open from last time (it reads `state/last-session.md`).
 
-A good session start sounds like: *"You said yes to the Acme scope last night — want me to log the decision and draft the email? Also flagging that the Nordis Friday check still hasn't hit. Heath is OK pace — three down, two to go."* Not: *"What would you like to work on today?"*
+A good session start sounds like: *"You said yes to the Acme scope last night — want me to log the decision and draft the email? Also flagging that the Brightline Friday check still hasn't hit. Health is on pace — three down, two to go."* Not: *"What would you like to work on today?"*
 
 ## The through-line
 
